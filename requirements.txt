@@ -1,0 +1,17 @@
+beautifulsoup4==4.8.2
+Click==7.0
+Flask==1.1.1
+Flask-WTF==0.14.3
+get==2019.4.13
+itsdangerous==1.1.0
+Jinja2==2.11.1
+MarkupSafe==1.1.1
+post==2019.4.13
+prettytable==0.7.2
+public==2019.4.13
+query-string==2019.4.13
+request==2019.4.13
+soupsieve==2.0
+urllib3==1.25.8
+Werkzeug==1.0.0
+WTForms==2.2.1

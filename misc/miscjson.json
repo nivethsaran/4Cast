@@ -1,0 +1,140 @@
+[
+    { trainDataFound: "trainRunningDataFound",trainNo: "56605",trainName: "CBE-TCR PASSENGER",from: "CBE",to: "TCR",schArrTime: "20:55",schDepTime: "16:30",dayCnt: 0,runsOn: "1111111",runsOnDays:getDaysOfRunString("1111111"),trainType: "PAS", prfFlag: "0",vldFrm: "26 Nov 2019",vldTo: "-", trnName:function(){return _LANG==="en-us"?"CBE-TCR PASSENGER": "कोयंबटूर जं.त्रिचूर पैसेन्जर"}, 
+    trainSchedule: { stations: [
+                {stnCode: "CBE",arrTime: "00:00",depTime: "16:30",arrDayCnt: 0,dayCnt: 0,distance: 0,pfNo: 0
+                },
+                {stnCode: "PTJ",arrTime: "16:39",depTime: "16:40",arrDayCnt: 0,dayCnt: 0,distance: 6,pfNo: 0
+                },
+                {stnCode: "MDKI",arrTime: "16:51",depTime: "16:52",arrDayCnt: 0,dayCnt: 0,distance: 16,pfNo: 0
+                },
+                {stnCode: "ETMD",arrTime: "16:59",depTime: "17:00",arrDayCnt: 0,dayCnt: 0,distance: 21,pfNo: 0
+                },
+                {stnCode: "WRA",arrTime: "17:13",depTime: "17:14",arrDayCnt: 0,dayCnt: 0,distance: 30,pfNo: 0
+                },
+                {stnCode: "CLMD",arrTime: "17:24",depTime: "17:25",arrDayCnt: 0,dayCnt: 0,distance: 35,pfNo: 0
+                },
+                {stnCode: "KJKD",arrTime: "17:27",depTime: "17:28",arrDayCnt: 0,dayCnt: 0,distance: 41,pfNo: 0
+                },
+                {stnCode: "PGT",arrTime: "17:45",depTime: "17:55",arrDayCnt: 0,dayCnt: 0,distance: 55,pfNo: 0
+                },
+                {stnCode: "PLL",arrTime: "18:05",depTime: "18:06",arrDayCnt: 0,dayCnt: 0,distance: 64,pfNo: 0
+                },
+                {stnCode: "MNY",arrTime: "18:11",depTime: "18:12",arrDayCnt: 0,dayCnt: 0,distance: 71,pfNo: 0
+                },
+                {stnCode: "LDY",arrTime: "18:19",depTime: "18:20",arrDayCnt: 0,dayCnt: 0,distance: 78,pfNo: 0
+                },
+                {stnCode: "PLPM",arrTime: "18:25",depTime: "18:26",arrDayCnt: 0,dayCnt: 0,distance: 82,pfNo: 0
+                },
+                {stnCode: "OTP",arrTime: "18:34",depTime: "18:35",arrDayCnt: 0,dayCnt: 0,distance: 86,pfNo: 0
+                },
+                {stnCode: "MNUR",arrTime: "18:42",depTime: "18:43",arrDayCnt: 0,dayCnt: 0,distance: 93,pfNo: 0
+                },
+                {stnCode: "SRR",arrTime: "19:05",depTime: "19:30",arrDayCnt: 0,dayCnt: 0,distance: 98,pfNo: 0
+                },
+                {stnCode: "VTK",arrTime: "19:44",depTime: "19:45",arrDayCnt: 0,dayCnt: 0,distance: 104,pfNo: 0
+                },
+                {stnCode: "MUC",arrTime: "19:51",depTime: "19:52",arrDayCnt: 0,dayCnt: 0,distance: 108,pfNo: 0
+                },
+                {stnCode: "WKI",arrTime: "19:58",depTime: "19:59",arrDayCnt: 0,dayCnt: 0,distance: 116,pfNo: 0
+                },
+                {stnCode: "MGK",arrTime: "20:07",depTime: "20:08",arrDayCnt: 0,dayCnt: 0,distance: 123,pfNo: 0
+                },
+                {stnCode: "PNQ",arrTime: "20:15",depTime: "20:16",arrDayCnt: 0,dayCnt: 0,distance: 130,pfNo: 0
+                },
+                {stnCode: "TCR",arrTime: "20:55",depTime: "00:00",arrDayCnt: 0,dayCnt: 0,distance: 132,pfNo: 0
+                }
+            ]
+        }, rakes: [
+            { startDate: "4 Mar 2020",departed: false,curStn: "CBE",terminated: false,idMsg: "0",cncldFrmStn: "null",cncldToStn: "null",totalJourney: "",lastUpdated: "2 Mar 2020 2:15", stations: [
+                    {stnCode: "CBE",actArr: "00:00",actDep: "16:30",dayCnt: 0, schArrTime: "00:00",schDepTime: "16:30",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 0,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "PTJ",actArr: "16:39",actDep: "16:40",dayCnt: 0, schArrTime: "16:39",schDepTime: "16:40",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 6,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "MDKI",actArr: "16:51",actDep: "16:52",dayCnt: 0, schArrTime: "16:51",schDepTime: "16:52",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 16,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "ETMD",actArr: "16:59",actDep: "17:00",dayCnt: 0, schArrTime: "16:59",schDepTime: "17:00",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 21,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "WRA",actArr: "17:13",actDep: "17:14",dayCnt: 0, schArrTime: "17:13",schDepTime: "17:14",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 30,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "CLMD",actArr: "17:24",actDep: "17:25",dayCnt: 0, schArrTime: "17:24",schDepTime: "17:25",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 35,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 1
+                    },
+                    {stnCode: "KJKD",actArr: "17:27",actDep: "17:28",dayCnt: 0, schArrTime: "17:27",schDepTime: "17:28",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 41,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "PGT",actArr: "17:45",actDep: "17:55",dayCnt: 0, schArrTime: "17:45",schDepTime: "17:55",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 55,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "PLL",actArr: "18:05",actDep: "18:06",dayCnt: 0, schArrTime: "18:05",schDepTime: "18:06",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 64,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "MNY",actArr: "18:11",actDep: "18:12",dayCnt: 0, schArrTime: "18:11",schDepTime: "18:12",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 71,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "LDY",actArr: "18:19",actDep: "18:20",dayCnt: 0, schArrTime: "18:19",schDepTime: "18:20",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 78,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "PLPM",actArr: "18:25",actDep: "18:26",dayCnt: 0, schArrTime: "18:25",schDepTime: "18:26",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 82,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "OTP",actArr: "18:34",actDep: "18:35",dayCnt: 0, schArrTime: "18:34",schDepTime: "18:35",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 86,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "MNUR",actArr: "18:42",actDep: "18:43",dayCnt: 0, schArrTime: "18:42",schDepTime: "18:43",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 93,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "SRR",actArr: "19:05",actDep: "19:30",dayCnt: 0, schArrTime: "19:05",schDepTime: "19:30",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 98,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "VTK",actArr: "19:44",actDep: "19:45",dayCnt: 0, schArrTime: "19:44",schDepTime: "19:45",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 104,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "MUC",actArr: "19:51",actDep: "19:52",dayCnt: 0, schArrTime: "19:51",schDepTime: "19:52",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 108,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "WKI",actArr: "19:58",actDep: "19:59",dayCnt: 0, schArrTime: "19:58",schDepTime: "19:59",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 116,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "MGK",actArr: "20:07",actDep: "20:08",dayCnt: 0, schArrTime: "20:07",schDepTime: "20:08",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 123,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "PNQ",actArr: "20:15",actDep: "20:16",dayCnt: 0, schArrTime: "20:15",schDepTime: "20:16",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 130,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "TCR",actArr: "20:55",actDep: "00:00",dayCnt: 0, schArrTime: "20:55",schDepTime: "00:00",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 132,journeyDate: "4 Mar 2020", actArrDate: "4 Mar 2020",actDepDate: "4 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    }
+                ], totalLateMins: 0, isRunningDataAvailable: true
+            },
+            { startDate: "3 Mar 2020",departed: false,curStn: "CBE",terminated: false,idMsg: "0",cncldFrmStn: "null",cncldToStn: "null",totalJourney: "",lastUpdated: "1 Mar 2020 2:15", stations: [
+                    {stnCode: "CBE",actArr: "00:00",actDep: "16:30",dayCnt: 0, schArrTime: "00:00",schDepTime: "16:30",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 0,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "PTJ",actArr: "16:39",actDep: "16:40",dayCnt: 0, schArrTime: "16:39",schDepTime: "16:40",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 6,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "MDKI",actArr: "16:51",actDep: "16:52",dayCnt: 0, schArrTime: "16:51",schDepTime: "16:52",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 16,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "ETMD",actArr: "16:59",actDep: "17:00",dayCnt: 0, schArrTime: "16:59",schDepTime: "17:00",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 21,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "WRA",actArr: "17:13",actDep: "17:14",dayCnt: 0, schArrTime: "17:13",schDepTime: "17:14",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 30,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "CLMD",actArr: "17:24",actDep: "17:25",dayCnt: 0, schArrTime: "17:24",schDepTime: "17:25",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 35,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 1
+                    },
+                    {stnCode: "KJKD",actArr: "17:27",actDep: "17:28",dayCnt: 0, schArrTime: "17:27",schDepTime: "17:28",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 41,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "PGT",actArr: "17:45",actDep: "17:55",dayCnt: 0, schArrTime: "17:45",schDepTime: "17:55",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 55,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "PLL",actArr: "18:05",actDep: "18:06",dayCnt: 0, schArrTime: "18:05",schDepTime: "18:06",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 64,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "MNY",actArr: "18:11",actDep: "18:12",dayCnt: 0, schArrTime: "18:11",schDepTime: "18:12",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 71,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "LDY",actArr: "18:19",actDep: "18:20",dayCnt: 0, schArrTime: "18:19",schDepTime: "18:20",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 78,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "PLPM",actArr: "18:25",actDep: "18:26",dayCnt: 0, schArrTime: "18:25",schDepTime: "18:26",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 82,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "OTP",actArr: "18:34",actDep: "18:35",dayCnt: 0, schArrTime: "18:34",schDepTime: "18:35",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 86,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "MNUR",actArr: "18:42",actDep: "18:43",dayCnt: 0, schArrTime: "18:42",schDepTime: "18:43",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 93,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "SRR",actArr: "19:05",actDep: "19:30",dayCnt: 0, schArrTime: "19:05",schDepTime: "19:30",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 98,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "VTK",actArr: "19:44",actDep: "19:45",dayCnt: 0, schArrTime: "19:44",schDepTime: "19:45",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 104,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "MUC",actArr: "19:51",actDep: "19:52",dayCnt: 0, schArrTime: "19:51",schDepTime: "19:52",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 108,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "WKI",actArr: "19:58",actDep: "19:59",dayCnt: 0, schArrTime: "19:58",schDepTime: "19:59",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 116,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "MGK",actArr: "20:07",actDep: "20:08",dayCnt: 0, schArrTime: "20:07",schDepTime: "20:08",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 123,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "PNQ",actArr: "20:15",actDep: "20:16",dayCnt: 0, schArrTime: "20:15",schDepTime: "20:16",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 130,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: false,pfNo: 0
+                    },
+                    {stnCode: "TCR",actArr: "20:55",actDep: "00:00",dayCnt: 0, schArrTime: "20:55",schDepTime: "00:00",schDayCnt: 0,delayArr: 0,delayDep: 0, arr: false,dep: false,distance: 132,journeyDate: "3 Mar 2020", actArrDate: "3 Mar 2020",actDepDate: "3 Mar 2020", stoppingStn: true,dvrtdStn: false,travelled: true,updWaitngArr: false,updWaitngDep: true,pfNo: 0
+                    }
+                ], totalLateMins: 0, isRunningDataAvailable: true
+            }
+        ]
+    }
+]]

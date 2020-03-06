@@ -1,0 +1,197 @@
+html,body{
+   height:100%;
+   background-color: #ccedd2;
+   font-family: 'Ubuntu',sans-serif ;
+}
+.carousel,.item,.active{
+   height:100%;
+ }
+.carousel-inner{
+    height:100%;
+}
+
+.center_button{
+    position: absolute;
+    top: 50%; 
+    align-items: center;
+    align-content: center;
+}
+
+
+.signupdetails{
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border:3px #216353 solid;
+    border-style: dotted;
+}
+
+.signupdetails p {
+        position: relative;
+        margin-left: 40%;
+        margin-bottom: 10px;
+	
+}
+
+.signupdetails h2 {
+        position: relative;
+        margin-left: 40%;
+        margin-bottom: 10px;
+	
+}
+
+.btn-border{
+    margin: 0px;
+    border: 2px solid black;
+}
+
+.signupdetails .alertmessagecustom {
+        position: relative;
+        margin-left: 40%;
+        margin-bottom: 10px;
+	
+}
+
+.button {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display:inline-block;
+  position: absolute;
+    top: 50%;
+    left:45%;
+    text-align: center;
+}
+
+.buttonlog {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display:inline-block;
+  position: absolute;
+    top: 50%;
+    left:40%;
+    text-align: center;
+}
+
+
+.buttonsign {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display:inline-block;
+  position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+}
+
+
+
+
+
+
+/* Gray */
+.default {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
+
+
+table {
+  border-collapse: collapse;
+}
+ th {
+  background: #ccc;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+/* 
+tr:nth-child(even) {
+  background: #efefef;
+} */
+
+
+tr{
+  background: #efefef;
+}
+
+
+tr:hover {
+  background: #d1d1d1;
+}
+
+
+
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+
+
+.about{
+  font-family: 'Ubuntu',sans-serif ;
+  text-align: center;
+}
+
+.aboutimage{
+  display: block;
+  width: 50%;
+  height: 50%;
+  left: 45%;
+}
+
+.center{
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.personaldetails{
+  font-family: 'Ubuntu',sans-serif ;
+}

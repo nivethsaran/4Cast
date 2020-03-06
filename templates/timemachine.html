@@ -1,0 +1,79 @@
+{% extends 'layout.html' %}
+
+{% block title %}Weather Channel{% endblock %}
+
+{% block content %}
+
+{% if session['username'] %}
+
+<form action='/timemachine' method="POST">
+
+    <label for="city">Choose City &emsp; &nbsp;</label>
+
+    <select id="city" class="form-control col-md-4" name="city">
+        {% if selected %}
+        <option value={{selected}}>{{selected}}</option>
+        {% else %}
+        <option value="EMPTY">--</option>
+        {% endif %}
+        {% for listitem in list %}
+
+        <option value={{listitem}}>{{listitem}}</option>
+        {% endfor %}
+    </select>
+    <br>
+    <label for="date">Enter the date you would like to go back to...</label>
+<input id="date" name="date" type="date" class="form-control col-md-4">
+<br>    
+{% with message = get_flashed_messages() %}
+{% if message %}
+<div class="alert alertmessagecustom alert-danger col-sm-4 alert-dismissible fade show" role="alert">
+    {% for messages in message%}
+    {{messages}}
+    {% endfor %}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+{% endif %}
+{% endwith %}
+<input type="submit" class="btn btn-dark">
+</form>
+
+{% if currently %}
+<div class="center">
+    <table style="width:100%">
+
+        <tr>
+            <td>Temperature</td>
+            <td>{{ currently['temperature'] }}</td>
+        </tr>
+        <tr>
+            <td>Apparent Temperature</td>
+            <td>{{ currently['apparentTemperature'] }}</td>
+        </tr>
+        <tr>
+            <td>Dew Point</td>
+            <td>{{ currently['dewPoint'] }}</td>
+        </tr>
+        <tr>
+            <td>Humidity</td>
+            <td>{{ currently['humidity'] }}</td>
+        </tr>
+        <tr>
+            <td>Pressure</td>
+            <td>{{ currently['pressure'] }}</td>
+        </tr>
+        <tr>
+            <td>Cloud Cover</td>
+            <td>{{ currently['cloudCover'] }}</td>
+        </tr>
+    </table>
+</div>
+{% endif %}
+
+{% else %}
+<h2>Please login to use these features</h2>
+{% endif %}
+
+{% endblock %}

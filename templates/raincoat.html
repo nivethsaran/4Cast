@@ -1,0 +1,84 @@
+{% extends 'layout.html' %}
+
+{% block title %}Weather Channel{% endblock %}
+
+{% block content %}
+
+{% if session['username'] %}
+
+<form action='/raincoat' method="POST" class="form-group">
+
+    <label for="choosecity">Choose City</label>
+
+    <select id="city" class="form-control col-sm-4" name="city">
+        {% if selected %}
+        <option value={{selected}}>{{selected}}</option>
+        {% else %}
+        <option value="EMPTY">--</option>
+        {% endif %}
+        {% for listitem in list %}
+
+        <option value={{listitem}}>{{listitem}}</option>
+        {% endfor %}
+    </select>
+    {% with message = get_flashed_messages() %}
+    {% if message %}
+    <div class="alert alertmessagecustom alert-danger col-sm-4 alert-dismissible fade show" role="alert">
+        {% for messages in message%}
+        {{messages}}
+        {% endfor %}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {% endif %}
+    {% endwith %}
+    <input type="submit" class="btn btn-dark">
+</form>
+
+
+{% if currently %}
+<div class="center">
+    <table style="width:100%">
+
+        <tr>
+            <td>Summary</td>
+            <td>{{ currently['summary'] }}</td>
+        </tr>
+        <tr>
+            <td>Precipitation Intensity</td>
+            <td>{{ currently['precipIntensity'] }}</td>
+        </tr>
+        <tr>
+            <td>Precipitation Probability</td>
+            <td>{{ currently['summary'] }}</td>
+        </tr>
+        <tr>
+            <td>Precipitation Type</td>
+            <td>{{ currently['precipProbability'] }}</td>
+        </tr>
+        <tr>
+            <td>Temperature</td>
+            <td>{{ currently['temperature'] }}</td>
+        </tr>
+        <tr>
+            <td>Wind Speed</td>
+            <td>{{ currently['windSpeed'] }}</td>
+        </tr>
+        <tr>
+            <td>Visibility</td>
+            <td>{{ currently['visibility'] }}</td>
+        </tr>
+    </table>
+</div>
+{% endif %}
+
+
+
+
+
+
+{% else %}
+<h2>Please login to use these features</h2>
+{% endif %}
+{% endblock %}
