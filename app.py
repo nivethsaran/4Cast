@@ -118,10 +118,10 @@ def signup():
       regex = '^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
       if fname == '' or lname == '' or username == '' or password == '' or email == '' or mobile == '':
          flash('All fields are mandatory')
+      elif not re.search(regex,email):
+            flash('Enter Valid email')
       elif validPassword(password)=='invalid':
          flash('Weak Password')
-      elif not re.search(regex,email):
-         flash('Enter Valid email')
       elif city == 'EMPTY':
          flash('Choose a City')
       elif not isValidNumber(mobile):

@@ -1,17 +1,10 @@
-html{
+html,body{
    height:100%;
    /* background-color: #ccedd2; */
    background-color: #C3C3C3;
    font-family: 'Ubuntu',sans-serif ;
   }
 
-body {
-   height:100%;
-   /* background-color: #ccedd2; */
-   background-color: #C3C3C3;
-   font-family: 'Ubuntu',sans-serif ;
-   padding-bottom: 60px;
-}
 
 #footer {
     
