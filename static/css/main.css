@@ -1,8 +1,21 @@
-html,body{
+html{
    height:100%;
    background-color: #ccedd2;
    font-family: 'Ubuntu',sans-serif ;
+  
+  }
+
+body{
+  height:100%;
+   background-color: #ccedd2;
+   font-family: 'Ubuntu',sans-serif ;
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+  padding-bottom: 100px;
 }
+
+
 .carousel,.item,.active{
    height:100%;
  }
@@ -171,6 +184,10 @@ ul.timeline > li:before {
     z-index: 400;
 }
 
+.copyright-container {
+    text-align: center;
+}
+
 
 
 .about{
@@ -194,4 +211,9 @@ display: block;
 
 .personaldetails{
   font-family: 'Ubuntu',sans-serif ;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
 }

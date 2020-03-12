@@ -37,7 +37,7 @@ def login():
                try:
                   railway = os.path.join(ROOT_FOLDER,'weather.db')
                   conn = sqlite3.connect(railway)
-                  dbURL = "SELECT username,password,fname,lname,email,mobile FROM user where username=?"
+                  dbURL = "SELECT username,password,fname,lname,email,mobile,city FROM user where username=?"
                   cursor = conn.cursor()
                   cursor.execute(dbURL,(username,))
                   rows=cursor.fetchall()
@@ -48,11 +48,15 @@ def login():
                      for row in rows:
                         if row[0]==username and row[1]==password:
                            fullname=row[2]+' '+row[3]
+                           citytocookie=row[6]
+                           # resp.set_cookie('city',citytocookie)
                            session['fullname']=fullname
                            session['username']=username
                            session['mobile']=row[5]
                            session['email']=row[4]
-                           return redirect(url_for('home'))
+                           resp=make_response(redirect(url_for('home')))
+                           resp.set_cookie('city',citytocookie)
+                           return resp
                         else:
                            flash('Wrong passwords')
                   
@@ -296,28 +300,6 @@ def logout():
 
 
 
-@app.route('/addtobookmarks/<string:trainno>/<string:stationcode>')
-def addtobookmarks(trainno,stationcode):
-   print(trainno,stationcode)
-   username=session['username']
-   conn = None
-   try:
-       railway = os.path.join(ROOT_FOLDER, 'weather.db')
-       conn = sqlite3.connect(railway)
-       dbURL = "INSERT INTO trainbookmark values(?,?,?)"
-      #  print(dbURL)
-       cursor = conn.cursor()
-       cursor.execute(
-           dbURL, (username, trainno, stationcode))
-      #  print(cursor)
-       conn.commit()
-       return redirect(url_for('livestation'))
-   except Exception as e:
-      print(e)
-   finally:
-      if conn:
-         conn.close()
-   return redirect(url_for('livestation'))
 
 if __name__=='__main__':
     app.run()
