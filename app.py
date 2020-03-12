@@ -132,14 +132,15 @@ def signup():
 
             railway = os.path.join(ROOT_FOLDER, 'weather.db')
             conn = sqlite3.connect(railway)
-            dbURL = "INSERT INTO user values(?,?,?,?,?,?)"
+            dbURL = "INSERT INTO user values(?,?,?,?,?,?,?)"
             cursor = conn.cursor()
-            cursor.execute(dbURL,(fname,lname,username,password,email,mobile))
+            cursor.execute(dbURL,(fname,lname,username,password,email,mobile,city))
             conn.commit()
             resp=make_response(redirect(url_for('login')))
             resp.set_cookie('city',city)
             return resp
          except Exception as e:
+            print(e)
             flash('Duplicate username')
          finally:
             if conn:
