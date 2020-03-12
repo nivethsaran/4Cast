@@ -5,31 +5,23 @@
 {% block content %}
 
 {% if session['username'] %}
+<br>
+<div class = "row">
+    <div class ="col-md-1">
 
-<div class="personaldetails">
-<h2>{{'Welcome '+session['fullname'] }}</h2>
-<h4>{{ 'Mobile:'+session['mobile']}}</h4>
-<h4>{{ 'Email:'+session['email']}}</h4>
+    </div>
+    <div class="col-md-8 personaldetails">
+    <h2>{{'Welcome, '+session['fullname'] + '!' }}</h2>
+    </div>
+
+    <div class="col-md-3">
+    <h5>{{ 'Mobile:'+session['mobile']}}</h4>
+    <h5>{{ 'Email:'+session['email']}}</h4>
+    </div>
 </div>
 
-<form action="/home" method="POST">
-    <input type="submit" value="Show Bookmarks" class="btn btn-dark">
-</form>
 {% else %}
 <h2>User has been currently logged out. Log in to access app features</h2>
-{% endif %}
-
-<br>
-{% if listbm %}
-<table>
-{% for row in listbm %}
-<tr>
-    <td>{{row[0]|string}}</td>
-    <td>{{row[1]|string}}</td>
-    <td><a href={{'/livetrain/'+row[0]|string+'/'+row[1]|string}}>Get Live Train Running status</a> </td>
-</tr>
-{% endfor %}
-</table>
 {% endif %}
 
 

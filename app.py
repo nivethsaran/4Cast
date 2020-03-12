@@ -175,7 +175,6 @@ def home():
 def timemachine():
    selected = ''
    data = {'currently': None}
-   data = {'currently': None}
    if request.method == "POST":
       city = request.form['city']
       datech=request.form['date']
@@ -188,7 +187,7 @@ def timemachine():
       else:
          timestamp=int(time.mktime(datetime.datetime.strptime(datech, "%Y-%m-%d").timetuple()))
          try:
-            queryURL = 'https://api.darksky.net/forecast/'+apikey+'/'+citylat+','+citylng+','+str(timestamp)
+            queryURL = 'https://api.darksky.net/forecast/'+apikey+'/'+citylat+','+citylng+','+str(timestamp)+"?units=si"
             print(queryURL)
             http = urllib3.PoolManager()
             r = http.request('GET', queryURL)
@@ -264,6 +263,21 @@ def raincoat():
    selected=''
    weeklylist=[]
    data={'currently':None}
+
+   if (request.method == 'GET'):
+      city = request.cookies.get('city')
+      if(city):
+         citylat=citydict[city]['lat']
+         citylng=citydict[city]['lng']
+         try:
+            queryURL = 'https://api.darksky.net/forecast/'+apikey+'/'+citylat+','+citylng
+            http = urllib3.PoolManager()
+            r = http.request('GET', queryURL)
+            data=json.loads(r.data);
+         except Exception as e:
+            print(e) 
+            flash('Unexpected Error Occured, Check your Internet Connection')
+
    if request.method=="POST":
       city=request.form['city']
       if not city == 'EMPTY':
@@ -275,13 +289,13 @@ def raincoat():
             r = http.request('GET', queryURL)
             data=json.loads(r.data);
          except Exception as e:
-               print(e) 
-               flash('Unexpected Error Occured, Check your Internet Connection')
-
+            print(e) 
+            flash('Unexpected Error Occured, Check your Internet Connection')
          selected=request.form['city']
       else:
          flash('Choose a city to continue')
-   return render_template('raincoat.html',list=sorted(citylist),selected=selected,currently=data['currently'],)
+
+   return render_template('raincoat.html',list=sorted(citylist),selected=selected,currently=data['currently'])
 
 
 

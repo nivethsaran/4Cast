@@ -6,39 +6,46 @@
 
 {% if session['username'] %}
 
-<form action='/timemachine' method="POST">
-
-    <label for="city">Choose City &emsp; &nbsp;</label>
-
-    <select id="city" class="form-control col-md-4" name="city">
-        {% if selected %}
-        <option value={{selected}}>{{selected}}</option>
-        {% else %}
-        <option value="EMPTY">--</option>
-        {% endif %}
-        {% for listitem in list %}
-
-        <option value={{listitem}}>{{listitem}}</option>
-        {% endfor %}
-    </select>
+<div class = "row">
+    <div class = "col-md-4"></div>
+    <div class = "col-md-4">
     <br>
-    <label for="date">Enter the date you would like to go back to...</label>
-<input id="date" name="date" type="date" class="form-control col-md-4">
-<br>    
-{% with message = get_flashed_messages() %}
-{% if message %}
-<div class="alert alertmessagecustom alert-danger col-sm-4 alert-dismissible fade show" role="alert">
-    {% for messages in message%}
-    {{messages}}
-    {% endfor %}
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button>
+    <h2>Time Machine</h2>
+    <form action='/timemachine' method="POST">
+
+        <label for="city">Choose City &emsp; &nbsp;</label>
+
+        <select id="city" class="form-control" name="city">
+            {% if selected %}
+            <option value={{selected}}>{{selected}}</option>
+            {% else %}
+            <option value="EMPTY">--</option>
+            {% endif %}
+            {% for listitem in list %}
+
+            <option value={{listitem}}>{{listitem}}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <label for="date">Enter the date you would like to go back to...</label>
+    <input id="date" name="date" type="date" class="form-control">
+    <br>    
+    {% with message = get_flashed_messages() %}
+    {% if message %}
+    <div class="alert alertmessagecustom alert-danger col-sm-4 alert-dismissible fade show" role="alert">
+        {% for messages in message%}
+        {{messages}}
+        {% endfor %}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {% endif %}
+    {% endwith %}
+    <input type="submit" class="btn btn-dark">
+    </form>
+    </div>
 </div>
-{% endif %}
-{% endwith %}
-<input type="submit" class="btn btn-dark">
-</form>
 
 {% if currently %}
 <div class="center">
@@ -46,27 +53,27 @@
 
         <tr>
             <td>Temperature</td>
-            <td>{{ currently['temperature'] }}</td>
+            <td>{{ currently['temperature'] }} &degC</td>
         </tr>
         <tr>
             <td>Apparent Temperature</td>
-            <td>{{ currently['apparentTemperature'] }}</td>
+            <td>{{ currently['apparentTemperature'] }} &degC</td>
         </tr>
         <tr>
             <td>Dew Point</td>
-            <td>{{ currently['dewPoint'] }}</td>
+            <td>{{ currently['dewPoint'] }} &degC</td>
         </tr>
         <tr>
             <td>Humidity</td>
-            <td>{{ currently['humidity'] }}</td>
+            <td>{{ currently['humidity'] }} </td>
         </tr>
         <tr>
             <td>Pressure</td>
-            <td>{{ currently['pressure'] }}</td>
+            <td>{{ ((currently['pressure'] | int) * 0.750062) | round(2) }} mm of Hg</td>
         </tr>
         <tr>
             <td>Cloud Cover</td>
-            <td>{{ currently['cloudCover'] }}</td>
+            <td>{{ ((currently['cloudCover'] | float) * 100) | round(2) }} % </td>
         </tr>
     </table>
 </div>

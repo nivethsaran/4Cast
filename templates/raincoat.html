@@ -6,68 +6,82 @@
 
 {% if session['username'] %}
 
-<form action='/raincoat' method="POST" class="form-group">
+<div class = "row">
+    <div class = "col-md-4">
 
-    <label for="choosecity">Choose City</label>
-
-    <select id="city" class="form-control col-sm-4" name="city">
-        {% if selected %}
-        <option value={{selected}}>{{selected}}</option>
-        {% else %}
-        <option value="EMPTY">--</option>
-        {% endif %}
-        {% for listitem in list %}
-
-        <option value={{listitem}}>{{listitem}}</option>
-        {% endfor %}
-    </select>
-    {% with message = get_flashed_messages() %}
-    {% if message %}
-    <div class="alert alertmessagecustom alert-danger col-sm-4 alert-dismissible fade show" role="alert">
-        {% for messages in message%}
-        {{messages}}
-        {% endfor %}
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
     </div>
-    {% endif %}
-    {% endwith %}
-    <input type="submit" class="btn btn-dark">
-</form>
+    <div class = "col-md-4">
+        <br>
+        <h2> Raincoat? </h2>
+        <form action='/raincoat' method="POST" class="form-group">
+            <label for="choosecity">Choose City</label>
+
+            <select id="city" class="form-control" name="city">
+                {% if selected %}
+                <option value={{selected}}>{{selected}}</option>
+                {% else %}
+                <option value="EMPTY">--</option>
+                {% endif %}
+                {% for listitem in list %}
+
+                <option value={{listitem}}>{{listitem}}</option>
+                {% endfor %}
+            </select>
+            {% with message = get_flashed_messages() %}
+            {% if message %}
+            <div class="alert alertmessagecustom alert-danger col-sm-4 alert-dismissible fade show" role="alert">
+                {% for messages in message%}
+                {{messages}}
+                {% endfor %}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            {% endif %}
+            {% endwith %}
+            <br>
+            <input type="submit" class="btn btn-dark">
+        </form>
+    </div>
+</div>
 
 
 {% if currently %}
 <div class="center">
-    <table style="width:100%">
 
-        <tr>
-            <td>Summary</td>
-            <td>{{ currently['summary'] }}</td>
-        </tr>
-        <tr>
+    {% if currently['precipProbability'] > 0.8 %}
+        <h3> You should definitely take a raincoat! </h3>
+    {% elif currently['precipProbability'] > 0.5 %}
+        <h3> You may need a raincoat </h3>
+    {% elif currently['precipProbability'] > 0.2 %}
+        <h3> You probably won't need a raincoat </h3>
+    {% else %}
+        <h3> You won't need a raincoat today </h3>
+    {% endif %}
+    <table style="width:100%">
+         <tr>
+            <td>Precipitation Probability</td>
+            <td>{{ ((currently['precipProbability'] | float) * 100) | round(2) }} %</td>
+         </tr>
+         <tr>
             <td>Precipitation Intensity</td>
             <td>{{ currently['precipIntensity'] }}</td>
-        </tr>
+         </tr>
         <tr>
-            <td>Precipitation Probability</td>
+            <td>Weather Summary</td>
             <td>{{ currently['summary'] }}</td>
         </tr>
         <tr>
             <td>Precipitation Type</td>
-            <td>{{ currently['precipProbability'] }}</td>
-        </tr>
-        <tr>
-            <td>Temperature</td>
-            <td>{{ currently['temperature'] }}</td>
+            <td>{{ currently['precipType'] }}</td>
         </tr>
         <tr>
             <td>Wind Speed</td>
-            <td>{{ currently['windSpeed'] }}</td>
+            <td>{{ ((currently['windSpeed'] | float) * 1.609) | round(2) }} kmph</td>
         </tr>
         <tr>
             <td>Visibility</td>
-            <td>{{ currently['visibility'] }}</td>
+            <td>{{ ((currently['visibility'] | float) * 1.609) | round(2) }} kmph</td>
         </tr>
     </table>
 </div>
